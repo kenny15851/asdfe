@@ -1,0 +1,181 @@
+export interface AnimeItem {
+  id: string;
+  slug: string;
+  name: string;
+  title?: string;
+  jname?: string;
+  description: string;
+  poster: string;
+  banner?: string;
+  format?: string;
+  episodes_count?: number;
+  rating?: string;
+  score?: number;
+  rank?: number;
+  season?: string;
+  year?: number;
+  status?: string;
+  genres: string[];
+  anilist_id?: number;
+  themoviedb_id?: number;
+  latest_episode?: number;
+}
+
+export interface EpisodeItem {
+  id: string | number;
+  number: number;
+  title: string;
+  duration?: string;
+  thumbnail?: string;
+  is_filler?: boolean;
+}
+
+export const SAMPLE_ANIME: AnimeItem[] = [
+  {
+    id: 'solo-leveling',
+    slug: 'solo-leveling-ore-dake-level-up-na-ken',
+    name: 'Solo Leveling (Ore dake Level Up na Ken)',
+    jname: '俺だけレベルアップな件',
+    description: 'Ten years ago, "the Gate" appeared and connected the real world with the realm of magic and monsters. To combat these vile beasts, ordinary people received superhuman powers and became known as "Hunters." Sung Jin-Woo is known as the weakest of all mankind.',
+    poster: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1400&auto=format&fit=crop&q=80',
+    format: 'TV',
+    episodes_count: 12,
+    rating: 'PG-13',
+    score: 8.45,
+    season: 'Winter',
+    year: 2024,
+    status: 'Completed',
+    genres: ['Action', 'Fantasy', 'Adventure', 'Super Power'],
+    anilist_id: 151807,
+    latest_episode: 12,
+  },
+  {
+    id: 'frieren',
+    slug: 'sousou-no-frieren',
+    name: 'Frieren: Beyond Journey\'s End',
+    jname: '葬送のフリーレン',
+    description: 'The adventure is over but life goes on for an elf mage just beginning to learn what living is all about. The elf mage Frieren and her courageous fellow adventurers have defeated the Demon King and brought peace to the land.',
+    poster: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1400&auto=format&fit=crop&q=80',
+    format: 'TV',
+    episodes_count: 28,
+    rating: 'PG-13',
+    score: 9.38,
+    season: 'Fall',
+    year: 2023,
+    status: 'Completed',
+    genres: ['Adventure', 'Drama', 'Fantasy', 'Magic'],
+    anilist_id: 154587,
+    latest_episode: 28,
+  },
+  {
+    id: 'jujutsu-kaisen-s2',
+    slug: 'jujutsu-kaisen-2nd-season',
+    name: 'Jujutsu Kaisen Season 2',
+    jname: '呪術廻戦 懐玉・玉折 / 渋谷事変',
+    description: 'The past comes to light when second-year students Satoru Gojo and Suguru Geto are tasked with escorting the Star Plasma Vessel, Riko Amanai, to Master Tengen. But when an assassin intervenes, things take a tragic turn.',
+    poster: 'https://images.unsplash.com/photo-1563089145-599997674d42?w=600&auto=format&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1400&auto=format&fit=crop&q=80',
+    format: 'TV',
+    episodes_count: 23,
+    rating: 'R-17+',
+    score: 8.82,
+    season: 'Summer',
+    year: 2023,
+    status: 'Completed',
+    genres: ['Action', 'Fantasy', 'Supernatural', 'Dark Fantasy'],
+    anilist_id: 145064,
+    latest_episode: 23,
+  },
+  {
+    id: 'demon-slayer-hashira',
+    slug: 'kimetsu-no-yaiba-hashira-geiko-hen',
+    name: 'Demon Slayer: Hashira Training Arc',
+    jname: '鬼滅の刃 柱稽古編',
+    description: 'Tanjiro goes to see the Stone Hashira, Himejima, who intends to prepare him for the battles to come. The training to become a Hashira—a high-ranking member of the Demon Slayer Corps—is intense and demanding.',
+    poster: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=600&auto=format&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1400&auto=format&fit=crop&q=80',
+    format: 'TV',
+    episodes_count: 8,
+    rating: 'R-17+',
+    score: 8.65,
+    season: 'Spring',
+    year: 2024,
+    status: 'Completed',
+    genres: ['Action', 'Historical', 'Supernatural', 'Shounen'],
+    anilist_id: 166240,
+    latest_episode: 8,
+  },
+  {
+    id: 'kaiju-no-8',
+    slug: 'kaijuu-8-gou',
+    name: 'Kaiju No. 8',
+    jname: '怪獣8号',
+    description: 'Kafka Hibino once dreamed of joining the Defense Force to battle Kaiju. However, after unexpected circumstances grant him the ability to transform into a Kaiju, he gets a second chance to pursue his lifelong goal.',
+    poster: 'https://images.unsplash.com/photo-1569701813229-33284b643e3c?w=600&auto=format&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1400&auto=format&fit=crop&q=80',
+    format: 'TV',
+    episodes_count: 12,
+    rating: 'PG-13',
+    score: 8.12,
+    season: 'Spring',
+    year: 2024,
+    status: 'Completed',
+    genres: ['Action', 'Sci-Fi', 'Military'],
+    anilist_id: 153288,
+    latest_episode: 12,
+  },
+  {
+    id: 'attack-on-titan-final',
+    slug: 'shingeki-no-kyojin-the-final-season',
+    name: 'Attack on Titan: The Final Season',
+    jname: '進撃の巨人 The Final Season',
+    description: 'Gabi Braun and Falco Grice have been training their entire lives to inherit one of the seven Titans under Marley\'s control. Across the ocean, Eren Yeager prepares his decisive strike against the world.',
+    poster: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&auto=format&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1400&auto=format&fit=crop&q=80',
+    format: 'TV',
+    episodes_count: 28,
+    rating: 'R-17+',
+    score: 9.06,
+    season: 'Winter',
+    year: 2022,
+    status: 'Completed',
+    genres: ['Action', 'Drama', 'Suspense', 'Mystery'],
+    anilist_id: 110277,
+    latest_episode: 28,
+  }
+];
+
+export const DEMO_STREAMS = [
+  {
+    name: 'Reliable HLS Stream (Master Playlist)',
+    url: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
+    subtitles: [
+      { file: 'https://raw.githubusercontent.com/andreyvit/subtitle-tools/master/sample.vtt', label: 'English', kind: 'subtitles', default: true }
+    ],
+    intro_chapter: { start: 15, end: 75 },
+    outro_chapter: { start: 580, end: 640 },
+    video_title: 'Episode Stream (High Definition 1080p)',
+  },
+  {
+    name: 'Alternative HLS Backup Stream',
+    url: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8',
+    subtitles: [
+      { file: '', label: 'English', kind: 'subtitles' }
+    ],
+    intro_chapter: { start: 10, end: 70 },
+    outro_chapter: { start: 480, end: 540 },
+    video_title: 'Episode Stream (Multi-bitrate HLS)',
+  },
+  {
+    name: 'English Dub Audio Stream',
+    url: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
+    subtitles: [
+      { file: '', label: 'English (Signs/Songs)', kind: 'subtitles' }
+    ],
+    intro_chapter: { start: 15, end: 75 },
+    outro_chapter: { start: 580, end: 640 },
+    video_title: 'Episode Stream (English Dubbed)',
+  }
+];

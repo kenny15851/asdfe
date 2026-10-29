@@ -1,0 +1,8 @@
+{
+  "name": "Remix ReAnime Streaming",
+  "description": "Stream anime with episode guides, server selection, stream decryption, broadcast schedule, and custom video player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
